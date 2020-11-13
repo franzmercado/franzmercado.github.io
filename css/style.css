@@ -1,7 +1,6 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #fffdd0;
   font-family: "Times New Roman", sans-serif;
   cursor: default;
 
@@ -15,10 +14,11 @@ footer{
   color: black;
   text-align: center;
    background-color: #fffdd0;
-
-
 }
 @media screen and (max-width: 768px) {
+  /* body{
+    color:red;
+  } */
    .intro a{
        font-size: 1.1em;
        width: auto;
@@ -40,6 +40,9 @@ footer{
 
 }
  @media screen and (min-width: 769px) and (max-width: 1024px) {
+   /* body{
+     color:blue;
+   } */
    .intro a{
        font-size: 1.1em;
        width: auto;
@@ -61,7 +64,10 @@ footer{
       }
 
 }
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
+@media screen and (min-width: 1400px) {
+  /* body{
+    color:yellow;
+  } */
     .intro {
         height: 1080px;
     }
@@ -71,44 +77,18 @@ footer{
     }
     .intro > .intro-box {
       padding-top: 0em;
-      border-bottom: 1px solid #ffee96;
+      border-bottom: .8em solid #ffee96;
 
      }
     .intro > .intro-box h1{
-      font-size: 3em;
+      font-size: 5em;
      }
     .intro > .intro-box p{
-       font-size: 1.1em;
-
-      }
-
-}
-@media screen and (min-width: 1201px) {
-    .intro {
-        height: 1080px;
-    }
-   .intro a{
-       font-size: 1.1em;
-       width: auto;
-    }
-    .intro > .intro-box {
-      padding-top: 0em;
-      border-bottom: 1px solid #ffee96;
-
-     }
-    .intro > .intro-box h1{
-      font-size: 3em;
-     }
-    .intro > .intro-box p{
-       font-size: 1.1em;
+       font-size: 1.5em;
 
     }
     .main-container > #sec-projects .sec-title{
       font-size: 3em;
-    }
-    .main-container > #sec-contacts .sec-title{
-      font-size: 3em;
-
     }
 
 }
@@ -152,10 +132,38 @@ footer{
 .btn-light:visited{
   color: black;
 }
+.btn-links {
+  margin: auto;
+  text-align: center;
+  padding: .5vw;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0.8s;
+}
+.btn-live{
+    background-color: white;
+    color: #4083ff;
+    border: 1px solid #4083ff;
+}
+.btn-code{
+    background-color: #299127;
+    color: white;
+    border: 1px solid #299127;
+}
+.btn-live:hover{
+    background-color: #4083ff;
+    color: white;
+    border: 1px solid #4083ff;
+}
+.btn-code:hover{
+    background-color: white;
+    color: #299127;
+    border: 1px solid #299127;
+}
  .intro {
   height: 720px;
-    background-image: url('../img/icon-logo.png'),linear-gradient(to bottom, rgb(0, 0, 0, .9), rgb(255, 255, 255, .5)),
-         url('../img/wall.jpg');
+    background-image: url('../files/img/icon-logo.png'),linear-gradient(to bottom, rgb(0, 0, 0, .9), rgb(255, 255, 255, .5)),
+         url('../files/img/wall.jpg');
    background-repeat: no-repeat,
        no-repeat,
        no-repeat;
@@ -191,16 +199,27 @@ footer{
   text-align: center;
 }
 .main-projects{
+  padding: 1em;
+  margin: 0 auto;
   display: grid;
   grid-gap: 1em;
+
   grid-template-columns: 1fr 1fr 1fr;
   text-decoration: none;
 
 }
 .card{
-  border: 1px solid #424242;
+  border: 1px solid grey;
   padding: 1em 1em;
   text-align: center;
+  background: #f2f2f2;
+  box-shadow: 3px 3px 5px grey;
+}
+.card > .card-title h1{
+  margin-bottom: 0;
+}
+.card-links{
+  padding: 1em 1em;
 }
 .card img{
   width: 100%;
@@ -217,7 +236,25 @@ footer{
 
 }
 #sec-contacts{
-  height: 15em;
+  height: auto;
+  padding: .5em;
+  color: white;
   background-color: grey;
-
+  text-align: center;
+}
+.con-details{
+  list-style: none;
+}
+#sec-contacts > ul li{
+  margin: .5em;
+}
+ #sec-contacts > ul li  span{
+   font-size: 1.1em;
+   text-decoration: underline;
+}
+#sec-contacts > ul li img{
+  width: 2em;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle;
 }
